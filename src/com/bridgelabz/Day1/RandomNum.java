@@ -10,17 +10,9 @@ Random random = new Random();
 int ran = random.nextInt(35,75);
 System.out.println(ran);
 
-try
-{
-System.out.println(args[0]);
-for(int i=0;i<=10;i++)
+for(int i=0;i< args.length;i++)
   {
 System.out.println(args[i]);
    }
-}
-catch(Exception e){}
-
-
-
-			}
+	}
 	}

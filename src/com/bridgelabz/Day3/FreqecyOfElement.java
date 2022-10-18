@@ -9,7 +9,7 @@ public class FreqecyOfElement {
 
                 for (int i = 0; i<array_one.length;i++){
                     int count = 1;
-                    for (int j = i + 1; j<array_one.length;i++){
+                    for (int j = i + 1; j<array_one.length;j++){
                         if (array_one[i] == array_one[j]){
                          count++;
                          fre[i] = visited;
@@ -22,7 +22,7 @@ public class FreqecyOfElement {
                 }
                 for (int k = 0;k<fre.length;k++){
                     if(fre[k] != visited){
-                        System.out.println(""+array_one[k]+""+fre[k]);
+                        System.out.println(""+array_one[k]+"  "+fre[k]);
                     }
 
                 }

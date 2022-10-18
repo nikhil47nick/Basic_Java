@@ -6,11 +6,6 @@ public class Distance {
 
     public static void main(String[] args){
 
-        Scanner scr = new Scanner(System.in);
-        System.out.println("Enter a Number for value a");
-        int num1 = scr.nextInt();
-        System.out.println("Enter a Number for value b");
-        int num2 = scr.nextInt();
 
         double x = Double.parseDouble(args[0]);
         double y = Double.parseDouble(args[1]);
