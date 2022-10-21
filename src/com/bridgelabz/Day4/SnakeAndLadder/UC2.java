@@ -1,0 +1,11 @@
+package com.bridgelabz.Day4.SnakeAndLadder;
+
+import java.util.Random;
+
+public class UC2 {
+    public static void main(String[] args){
+        int player1Pos = 0;
+        int dice = (int)(Math.random()*6+1);
+
+    }
+}
