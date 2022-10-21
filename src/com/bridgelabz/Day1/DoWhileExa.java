@@ -14,8 +14,8 @@ public class DoWhileExa{
 		
 	
 	do{
-		System.out.println(count);
 		count++;
+		System.out.println(count);
 		
 	}while(count < num);
 	

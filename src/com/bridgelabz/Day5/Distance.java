@@ -1,9 +1,6 @@
-package com.bridgelabz.Day2;
-
-import java.util.Scanner;
+package com.bridgelabz.Day5;
 
 public class Distance {
-
     public static void main(String[] args){
 
 

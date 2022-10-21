@@ -10,6 +10,6 @@ public class SmallestOfArray {
                 min = array_one[i];
             }
         }
-        System.out.println("Maximum Value"+min);
+        System.out.println("Smallest Value"+min);
     }
 }
