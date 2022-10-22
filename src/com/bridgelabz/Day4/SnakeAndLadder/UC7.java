@@ -3,34 +3,31 @@ package com.bridgelabz.Day4.SnakeAndLadder;
 import java.util.Random;
 
 public class UC7 {
-    public static final int ladder=1,snake=2;
+    public static final int ladder=2,snake=1;
 
     public static int play(int player){
 
-        double dice = Math.random()*6+1;
-        double play = Math.random()*3+1;
-        switch ((int)play) {
+        int dice = (int)(Math.random()*6+1);
+        int play = (int)(Math.random()*2+1);
+        switch (play) {
             case ladder:
-                player = player + (int)dice;
+                if (player + dice >100){
+                    dice = 0;
+                }else{
+                    dice = (dice);
+                }
                 break;
             case snake:
-                player = player - (int)dice;
+                if (player -dice < 0) {
+                    dice=0;
+                }else{
+                    dice = (-dice);
+                }
                 break;
-            default:
-                player = player + 0;
+            default: dice = 0;
+            break;
         }
-        if (player <100 && player >0) {
-            System.out.println("out");
-            return player;
-        }else if (player < 0){
-            System.out.println("in");
-            player=0;
-            return player;
-        }else{
-            System.out.println("done");
-            int n = player-(int)dice;
-            return  n;
-        }
+        return  dice;
     }
 
     public static void main(String[] args) {
@@ -41,6 +38,9 @@ public class UC7 {
 
         while (win == 0) {
             count++;
+            player1Pos =player1Pos + play(player1Pos);
+            player2Pos =player2Pos + play(player2Pos);
+
             if (player1Pos == 100){
                 win = 1;
                 System.out.println("Player 1 Win");
@@ -48,11 +48,6 @@ public class UC7 {
                 win = 1;
                 System.out.println("Player 2 Win");
             }
-           player1Pos =player1Pos + play(player1Pos);
-            System.out.println(""+player1Pos);
-           player2Pos =player2Pos + play(player2Pos);
-            System.out.println(""+player2Pos);
-
         }
         System.out.println("Total count"+count);
     }

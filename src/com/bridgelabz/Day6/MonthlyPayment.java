@@ -9,7 +9,7 @@ public class MonthlyPayment {
         int re = ( r / ( 12 * 100 ) );
         double payment =( p * re) / ( 1-(Math.pow(re,-(12*y) ) ) );
 
-        System.out.println(payment);
+        System.out.println("Monthly payment: "+payment);
 
     }
 
