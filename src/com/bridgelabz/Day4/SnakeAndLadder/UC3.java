@@ -15,8 +15,8 @@ public class UC3 {
         break;
         case snake:player1Pos=player1Pos-dice;
         break;
-        default:player1Pos=player1Pos+0;
+        default: break;
         }
-
+        System.out.println("Player Position : "+player1Pos);
     }
 }
